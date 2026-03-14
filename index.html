@@ -1,971 +1,667 @@
-+<!doctype html>
-+<html lang="en">
-+<head>
-+  <meta charset="utf-8" />
-+  <meta name="viewport" content="width=device-width, initial-scale=1" />
-+  <meta
-+    name="description"
-+    content="Privacy Policy for Lihenium: Scan PDF &amp; Vault by Lihenium Studio."
-+  />
-+  <title>Privacy Policy | Lihenium: Scan PDF &amp; Vault</title>
-+  <link rel="preconnect" href="https://fonts.googleapis.com" />
-+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-+  <link
-+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-+    rel="stylesheet"
-+  />
-+  <style>
-+    :root {
-+      color-scheme: light;
-+      --bg: #f4f7fb;
-+      --bg-soft: #fff8eb;
-+      --panel: rgba(255, 255, 255, 0.82);
-+      --panel-strong: #ffffff;
-+      --text: #122033;
-+      --muted: #617189;
-+      --line: rgba(18, 32, 51, 0.1);
-+      --line-strong: rgba(18, 32, 51, 0.16);
-+      --brand: #1b55d9;
-+      --brand-soft: rgba(27, 85, 217, 0.1);
-+      --accent: #0f766e;
-+      --accent-soft: rgba(15, 118, 110, 0.1);
-+      --gold: #b98517;
-+      --gold-soft: rgba(185, 133, 23, 0.12);
-+      --danger-soft: rgba(177, 58, 58, 0.08);
-+      --shadow: 0 24px 60px rgba(15, 23, 42, 0.1);
-+      --radius-xl: 28px;
-+      --radius-lg: 22px;
-+      --radius-md: 16px;
-+      --radius-sm: 12px;
-+      --max: 1120px;
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      :root {
-+        color-scheme: dark;
-+        --bg: #09111b;
-+        --bg-soft: #101a28;
-+        --panel: rgba(15, 23, 34, 0.86);
-+        --panel-strong: #101826;
-+        --text: #edf3fb;
-+        --muted: #a3b2c8;
-+        --line: rgba(237, 243, 251, 0.1);
-+        --line-strong: rgba(237, 243, 251, 0.16);
-+        --brand: #78a4ff;
-+        --brand-soft: rgba(120, 164, 255, 0.16);
-+        --accent: #60c2b8;
-+        --accent-soft: rgba(96, 194, 184, 0.14);
-+        --gold: #f2c45e;
-+        --gold-soft: rgba(242, 196, 94, 0.14);
-+        --danger-soft: rgba(255, 123, 123, 0.1);
-+        --shadow: 0 28px 60px rgba(0, 0, 0, 0.34);
-+      }
-+    }
-+
-+    * {
-+      box-sizing: border-box;
-+    }
-+
-+    html {
-+      scroll-behavior: smooth;
-+    }
-+
-+    body {
-+      margin: 0;
-+      font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-+      color: var(--text);
-+      background:
-+        radial-gradient(circle at top left, var(--bg-soft) 0, transparent 34%),
-+        radial-gradient(circle at top right, var(--brand-soft) 0, transparent 28%),
-+        linear-gradient(180deg, var(--bg) 0%, #eef3f8 100%);
-+      line-height: 1.7;
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      body {
-+        background:
-+          radial-gradient(circle at top left, rgba(242, 196, 94, 0.08) 0, transparent 26%),
-+          radial-gradient(circle at top right, rgba(120, 164, 255, 0.12) 0, transparent 24%),
-+          linear-gradient(180deg, #09111b 0%, #0d1623 100%);
-+      }
-+    }
-+
-+    a {
-+      color: var(--brand);
-+      text-decoration: none;
-+    }
-+
-+    a:hover {
-+      text-decoration: underline;
-+    }
-+
-+    code {
-+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-+      font-size: 0.93em;
-+      background: var(--brand-soft);
-+      border: 1px solid var(--line);
-+      border-radius: 999px;
-+      padding: 0.16rem 0.55rem;
-+      white-space: nowrap;
-+    }
-+
-+    .page {
-+      max-width: var(--max);
-+      margin: 0 auto;
-+      padding: 32px 18px 72px;
-+    }
-+
-+    .hero,
-+    .card,
-+    .section-card,
-+    .toc,
-+    .summary-card,
-+    .contact-card {
-+      backdrop-filter: blur(16px);
-+      background: var(--panel);
-+      border: 1px solid var(--line);
-+      box-shadow: var(--shadow);
-+    }
-+
-+    .hero {
-+      border-radius: var(--radius-xl);
-+      overflow: hidden;
-+      position: relative;
-+    }
-+
-+    .hero::before {
-+      content: "";
-+      position: absolute;
-+      inset: 0;
-+      background:
-+        radial-gradient(circle at 12% 18%, var(--gold-soft) 0, transparent 22%),
-+        linear-gradient(135deg, var(--brand-soft), transparent 60%),
-+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent);
-+      pointer-events: none;
-+    }
-+
-+    .hero-inner {
-+      position: relative;
-+      padding: 34px 28px 30px;
-+    }
-+
-+    .eyebrow {
-+      display: inline-flex;
-+      align-items: center;
-+      gap: 0.5rem;
-+      font-size: 0.82rem;
-+      font-weight: 700;
-+      letter-spacing: 0.08em;
-+      text-transform: uppercase;
-+      color: var(--brand);
-+      margin-bottom: 14px;
-+    }
-+
-+    h1,
-+    h2,
-+    h3 {
-+      margin: 0 0 0.7rem;
-+      line-height: 1.18;
-+      letter-spacing: -0.02em;
-+    }
-+
-+    h1 {
-+      font-size: clamp(2rem, 4vw, 3.45rem);
-+      max-width: 14ch;
-+    }
-+
-+    h2 {
-+      font-size: clamp(1.35rem, 2.1vw, 1.8rem);
-+    }
-+
-+    h3 {
-+      font-size: 1.05rem;
-+    }
-+
-+    p {
-+      margin: 0 0 1rem;
-+      color: var(--text);
-+    }
-+
-+    .lead {
-+      max-width: 72ch;
-+      font-size: 1.03rem;
-+      color: var(--muted);
-+    }
-+
-+    .hero-meta,
-+    .pill-row,
-+    .toc-grid,
-+    .summary-grid,
-+    .two-col {
-+      display: grid;
-+      gap: 14px;
-+    }
-+
-+    .hero-meta {
-+      grid-template-columns: repeat(4, minmax(0, 1fr));
-+      margin-top: 24px;
-+    }
-+
-+    .meta-box {
-+      background: rgba(255, 255, 255, 0.55);
-+      border: 1px solid var(--line);
-+      border-radius: var(--radius-md);
-+      padding: 14px 16px;
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      .meta-box {
-+        background: rgba(255, 255, 255, 0.03);
-+      }
-+    }
-+
-+    .meta-label {
-+      display: block;
-+      font-size: 0.78rem;
-+      text-transform: uppercase;
-+      letter-spacing: 0.07em;
-+      font-weight: 700;
-+      color: var(--muted);
-+      margin-bottom: 0.35rem;
-+    }
-+
-+    .meta-value {
-+      font-weight: 700;
-+      font-size: 0.98rem;
-+    }
-+
-+    .pill-row {
-+      grid-template-columns: repeat(4, minmax(0, max-content));
-+      margin-top: 16px;
-+    }
-+
-+    .pill {
-+      display: inline-flex;
-+      align-items: center;
-+      gap: 0.5rem;
-+      border-radius: 999px;
-+      border: 1px solid var(--line);
-+      background: rgba(255, 255, 255, 0.7);
-+      padding: 0.6rem 0.9rem;
-+      font-size: 0.9rem;
-+      font-weight: 600;
-+      color: var(--text);
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      .pill {
-+        background: rgba(255, 255, 255, 0.04);
-+      }
-+    }
-+
-+    .layout {
-+      display: grid;
-+      grid-template-columns: minmax(0, 1fr);
-+      gap: 18px;
-+      margin-top: 22px;
-+    }
-+
-+    .summary-grid {
-+      grid-template-columns: repeat(4, minmax(0, 1fr));
-+      margin-top: 18px;
-+    }
-+
-+    .summary-card {
-+      border-radius: var(--radius-lg);
-+      padding: 20px 18px;
-+    }
-+
-+    .summary-card h3 {
-+      margin-bottom: 0.45rem;
-+    }
-+
-+    .summary-card p {
-+      margin: 0;
-+      color: var(--muted);
-+      font-size: 0.96rem;
-+    }
-+
-+    .toc {
-+      border-radius: var(--radius-lg);
-+      padding: 22px 22px 18px;
-+    }
-+
-+    .toc-grid {
-+      grid-template-columns: repeat(3, minmax(0, 1fr));
-+      margin-top: 12px;
-+    }
-+
-+    .toc a {
-+      display: block;
-+      border: 1px solid var(--line);
-+      border-radius: var(--radius-md);
-+      background: rgba(255, 255, 255, 0.5);
-+      padding: 0.85rem 0.95rem;
-+      font-weight: 600;
-+      color: var(--text);
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      .toc a {
-+        background: rgba(255, 255, 255, 0.03);
-+      }
-+    }
-+
-+    .section-stack {
-+      display: grid;
-+      gap: 18px;
-+    }
-+
-+    .section-card {
-+      border-radius: var(--radius-lg);
-+      padding: 24px 22px;
-+    }
-+
-+    .section-card p:last-child,
-+    .section-card ul:last-child,
-+    .section-card .table-wrap:last-child {
-+      margin-bottom: 0;
-+    }
-+
-+    .subtle {
-+      color: var(--muted);
-+    }
-+
-+    .note {
-+      border-left: 4px solid var(--brand);
-+      background: rgba(27, 85, 217, 0.06);
-+      border-radius: 14px;
-+      padding: 14px 16px;
-+      margin-top: 1rem;
-+      color: var(--text);
-+    }
-+
-+    .warn {
-+      border-left-color: var(--gold);
-+      background: var(--gold-soft);
-+    }
-+
-+    ul {
-+      margin: 0.55rem 0 1rem;
-+      padding-left: 1.1rem;
-+    }
-+
-+    li + li {
-+      margin-top: 0.42rem;
-+    }
-+
-+    .table-wrap {
-+      overflow-x: auto;
-+      margin-top: 12px;
-+      border: 1px solid var(--line);
-+      border-radius: var(--radius-md);
-+    }
-+
-+    table {
-+      width: 100%;
-+      min-width: 760px;
-+      border-collapse: collapse;
-+      background: rgba(255, 255, 255, 0.42);
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      table {
-+        background: rgba(255, 255, 255, 0.02);
-+      }
-+    }
-+
-+    th,
-+    td {
-+      padding: 14px 14px;
-+      vertical-align: top;
-+      text-align: left;
-+      border-bottom: 1px solid var(--line);
-+    }
-+
-+    th {
-+      font-size: 0.83rem;
-+      letter-spacing: 0.06em;
-+      text-transform: uppercase;
-+      color: var(--muted);
-+      background: rgba(255, 255, 255, 0.46);
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      th {
-+        background: rgba(255, 255, 255, 0.04);
-+      }
-+    }
-+
-+    tr:last-child td {
-+      border-bottom: 0;
-+    }
-+
-+    .link-list {
-+      display: grid;
-+      gap: 10px;
-+      padding-left: 0;
-+      list-style: none;
-+      margin-top: 14px;
-+    }
-+
-+    .link-list a {
-+      display: block;
-+      border: 1px solid var(--line);
-+      border-radius: var(--radius-sm);
-+      padding: 12px 14px;
-+      background: rgba(255, 255, 255, 0.5);
-+      color: var(--text);
-+      font-weight: 600;
-+    }
-+
-+    @media (prefers-color-scheme: dark) {
-+      .link-list a {
-+        background: rgba(255, 255, 255, 0.03);
-+      }
-+    }
-+
-+    .contact-card {
-+      border-radius: var(--radius-lg);
-+      padding: 24px 22px;
-+      margin-top: 18px;
-+    }
-+
-+    .footer {
-+      margin-top: 26px;
-+      text-align: center;
-+      color: var(--muted);
-+      font-size: 0.92rem;
-+    }
-+
-+    @media (max-width: 980px) {
-+      .hero-meta,
-+      .summary-grid {
-+        grid-template-columns: repeat(2, minmax(0, 1fr));
-+      }
-+
-+      .toc-grid {
-+        grid-template-columns: repeat(2, minmax(0, 1fr));
-+      }
-+
-+      .pill-row {
-+        grid-template-columns: repeat(2, minmax(0, max-content));
-+      }
-+    }
-+
-+    @media (max-width: 640px) {
-+      .page {
-+        padding: 18px 14px 54px;
-+      }
-+
-+      .hero-inner,
-+      .section-card,
-+      .toc,
-+      .summary-card,
-+      .contact-card {
-+        padding: 20px 18px;
-+      }
-+
-+      .hero-meta,
-+      .summary-grid,
-+      .toc-grid,
-+      .pill-row {
-+        grid-template-columns: minmax(0, 1fr);
-+      }
-+
-+      .meta-box,
-+      .pill {
-+        width: 100%;
-+      }
-+
-+      table {
-+        min-width: 620px;
-+      }
-+    }
-+  </style>
-+</head>
-+<body>
-+  <main class="page">
-+    <header class="hero">
-+      <div class="hero-inner">
-+        <div class="eyebrow">Privacy Policy</div>
-+        <h1>Lihenium: Scan PDF &amp; Vault</h1>
-+        <p class="lead">
-+          This Privacy Policy explains how <strong>Lihenium Studio</strong> handles information in connection
-+          with the Android application <strong>Lihenium: Scan PDF &amp; Vault</strong> (the
-+          &quot;App&quot;). The App is designed as a local-first document utility: most scanning, editing,
-+          OCR, vault protection, and file management happen on your device. Where the App uses third-party
-+          services such as Google Sign-In, Google Drive, Firebase Crashlytics, Google Mobile Ads, ML Kit, or
-+          Google Play Billing, those providers may process limited data according to their own policies.
-+        </p>
-+
-+        <div class="pill-row" aria-label="policy highlights">
-+          <div class="pill">Local-first by default</div>
-+          <div class="pill">Optional Google account features</div>
-+          <div class="pill">No developer-run document server</div>
-+          <div class="pill">Public, GitHub-friendly HTML page</div>
-+        </div>
-+
-+        <div class="hero-meta">
-+          <div class="meta-box">
-+            <span class="meta-label">Publisher</span>
-+            <div class="meta-value">Lihenium Studio</div>
-+          </div>
-+          <div class="meta-box">
-+            <span class="meta-label">Contact</span>
-+            <div class="meta-value">
-+              <a href="mailto:lihenium.app@gmail.com">lihenium.app@gmail.com</a>
-+            </div>
-+          </div>
-+          <div class="meta-box">
-+            <span class="meta-label">Effective Date</span>
-+            <div class="meta-value">March 14, 2026</div>
-+          </div>
-+          <div class="meta-box">
-+            <span class="meta-label">Last Updated</span>
-+            <div class="meta-value">March 14, 2026</div>
-+          </div>
-+        </div>
-+      </div>
-+    </header>
-+
-+    <section class="summary-grid" aria-label="quick summary">
-+      <article class="summary-card">
-+        <h3>1. Your files stay local by default</h3>
-+        <p>
-+          Documents, scans, edits, and vault items are generally created, stored, and processed on your
-+          device unless you choose to export, share, sign in, or back up data.
-+        </p>
-+      </article>
-+      <article class="summary-card">
-+        <h3>2. Google services are optional in key flows</h3>
-+        <p>
-+          Google Sign-In and Google Drive backup are optional. Most core scanning and document features can be
-+          used without signing in to a Google account.
-+        </p>
-+      </article>
-+      <article class="summary-card">
-+        <h3>3. Ads, billing, and crash reports may involve third parties</h3>
-+        <p>
-+          The free experience may include Google ads, premium purchases are handled by Google Play, and public
-+          releases may use Firebase Crashlytics for stability diagnostics.
-+        </p>
-+      </article>
-+      <article class="summary-card">
-+        <h3>4. You remain in control</h3>
-+        <p>
-+          You can manage permissions, sign out, delete local files, remove cloud backups, reset your device ad
-+          ID where supported, and contact us with privacy questions.
-+        </p>
-+      </article>
-+    </section>
-+
-+    <nav class="toc" aria-label="table of contents">
-+      <h2>Table of Contents</h2>
-+      <div class="toc-grid">
-+        <a href="#who-we-are">1. Who We Are</a>
-+        <a href="#scope">2. Scope</a>
-+        <a href="#data-we-handle">3. Information We Handle</a>
-+        <a href="#how-we-use-data">4. How We Use Information</a>
-+        <a href="#local-processing">5. Local Processing</a>
-+        <a href="#permissions">6. Permissions</a>
-+        <a href="#sharing">7. Sharing and Third Parties</a>
-+        <a href="#google-features">8. Google Sign-In and Drive Backup</a>
-+        <a href="#ads-billing">9. Ads, Billing, and Monetization</a>
-+        <a href="#crash-reporting">10. Crash Reporting</a>
-+        <a href="#retention">11. Retention and Deletion</a>
-+        <a href="#choices">12. Your Choices and Rights</a>
-+        <a href="#security">13. Security</a>
-+        <a href="#children">14. Children&#39;s Privacy</a>
-+        <a href="#international">15. International Processing</a>
-+        <a href="#changes">16. Changes to This Policy</a>
-+        <a href="#contact">17. Contact</a>
-+      </div>
-+    </nav>
-+
-+    <div class="section-stack">
-+      <section class="section-card" id="who-we-are">
-+        <h2>1. Who We Are</h2>
-+        <p>
-+          <strong>App:</strong> Lihenium: Scan PDF &amp; Vault<br />
-+          <strong>Publisher / Developer Brand:</strong> Lihenium Studio<br />
-+          <strong>Primary Contact:</strong> <a href="mailto:lihenium.app@gmail.com">lihenium.app@gmail.com</a><br />
-+          <strong>Country:</strong> India<br />
-+          <strong>Android Package:</strong> <code>com.abhi.docu</code>
-+        </p>
-+        <p class="subtle">
-+          In this Privacy Policy, &quot;Lihenium Studio&quot;, &quot;we&quot;, &quot;us&quot;, and &quot;our&quot;
-+          refer to the independent publisher of the App.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="scope">
-+        <h2>2. Scope of This Privacy Policy</h2>
-+        <p>
-+          This Privacy Policy applies to the Android application Lihenium: Scan PDF &amp; Vault, any in-app
-+          privacy policy links or screens, and the publicly hosted privacy policy page you use for distribution
-+          and store compliance.
-+        </p>
-+        <p>
-+          This policy does <strong>not</strong> govern third-party websites, services, or applications that
-+          you access through external links, email clients, Google services, cloud storage providers, payment
-+          processors, or advertising providers. Those services operate under their own terms and privacy
-+          policies.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="data-we-handle">
-+        <h2>3. Information We Handle</h2>
-+
-+        <h3>3.1 Information you create, import, or control in the App</h3>
-+        <ul>
-+          <li>Scanned pages, imported images, PDFs, OCR text, edited files, exports, and document metadata.</li>
-+          <li>Vault content, vault-related file metadata, and locally managed security settings for protected files.</li>
-+          <li>Files you explicitly open through Android file pickers, share sheets, the camera, or supported import flows.</li>
-+          <li>Feedback or support messages, plus any information or attachments you voluntarily send by email.</li>
-+        </ul>
-+
-+        <h3>3.2 Optional account and profile information</h3>
-+        <p>
-+          If you choose to sign in with Google, the App may locally store and use the following account-related
-+          information to maintain your optional session and backup flows:
-+        </p>
-+        <ul>
-+          <li>Google account email address</li>
-+          <li>Display name</li>
-+          <li>Google account user identifier</li>
-+          <li>Profile picture URI</li>
-+        </ul>
-+        <p class="subtle">
-+          The App does not ask for or receive your Google password. Authentication is provided through Google
-+          services and Android Credential Manager / Google identity services.
-+        </p>
-+
-+        <h3>3.3 Local app state and settings</h3>
-+        <ul>
-+          <li>Theme, language, storage, PDF-opening, lock, vault, and feature preferences.</li>
-+          <li>Recent activity, processing state, backup metadata, and restoration state needed for app features.</li>
-+          <li>Device and app context needed to run user-requested jobs such as scanning, backup, restore, export, or notifications.</li>
-+        </ul>
-+
-+        <h3>3.4 Diagnostics, advertising, and purchase-related information</h3>
-+        <ul>
-+          <li>Public releases may send crash and ANR diagnostics to Firebase Crashlytics.</li>
-+          <li>The free version may use Google Mobile Ads / AdMob, which can process advertising and device-related data as described in Google&#39;s own documentation and policies.</li>
-+          <li>The App may receive purchase status, entitlement state, and related billing results from Google Play to unlock premium features.</li>
-+        </ul>
-+      </section>
-+
-+      <section class="section-card" id="how-we-use-data">
-+        <h2>4. How We Use Information</h2>
-+        <ul>
-+          <li>To provide scanning, OCR, PDF tools, file conversion, secure vault, export, and document management features.</li>
-+          <li>To save, organize, restore, and secure your content on your device or, if you choose, in your Google account backup area.</li>
-+          <li>To maintain optional sign-in state for cloud backup and related account-aware features.</li>
-+          <li>To display ads in the free experience and to verify premium purchases or subscription entitlements.</li>
-+          <li>To diagnose crashes, improve stability, address reliability issues, and respond to support requests.</li>
-+          <li>To comply with law, enforce rights, and protect users, the App, and third-party services from misuse or abuse.</li>
-+        </ul>
-+        <div class="note">
-+          We do not operate a developer-run document processing server for the App&#39;s core scanning and editing
-+          functions. We do not intentionally use the contents of your documents for advertising profiling or sale.
-+        </div>
-+      </section>
-+
-+      <section class="section-card" id="local-processing">
-+        <h2>5. Local-First Processing and Storage</h2>
-+        <p>
-+          Lihenium is built as a local-first document utility. In normal usage, your scans, PDFs, edits,
-+          previews, OCR output, and vault-protected files remain on your device or in storage locations that
-+          you choose.
-+        </p>
-+        <ul>
-+          <li>Document scanning, image processing, PDF review, and most file handling occur on-device.</li>
-+          <li>ML Kit-based OCR, QR scanning, and subject segmentation are designed to run on-device.</li>
-+          <li>Optional translation features use on-device ML Kit translation models, although the App may download language models when needed.</li>
-+          <li>Vault content is intended to remain protected on your device using locally controlled credentials and security features.</li>
-+        </ul>
-+        <div class="note warn">
-+          If you forget your vault passphrase, PIN, or recovery details, private vault content may become
-+          inaccessible. Please store your credentials carefully.
-+        </div>
-+      </section>
-+
-+      <section class="section-card" id="permissions">
-+        <h2>6. Permissions We Request and Why</h2>
-+        <p class="subtle">
-+          Some permissions depend on Android version, the exact workflow you use, and whether you choose a
-+          system picker flow or a direct app capability.
-+        </p>
-+
-+        <div class="table-wrap">
-+          <table>
-+            <thead>
-+              <tr>
-+                <th>Permission</th>
-+                <th>Purpose</th>
-+                <th>Typical Use</th>
-+              </tr>
-+            </thead>
-+            <tbody>
-+              <tr>
-+                <td><code>CAMERA</code></td>
-+                <td>Capture document scans and related images.</td>
-+                <td>Live scanning and camera-based capture.</td>
-+              </tr>
-+              <tr>
-+                <td><code>FLASHLIGHT</code></td>
-+                <td>Enable torch support while scanning.</td>
-+                <td>Low-light capture assistance.</td>
-+              </tr>
-+              <tr>
-+                <td><code>READ_MEDIA_IMAGES</code></td>
-+                <td>Open images you choose from device storage.</td>
-+                <td>Import scans, images, and photo-based documents.</td>
-+              </tr>
-+              <tr>
-+                <td><code>READ_MEDIA_VIDEO</code></td>
-+                <td>Access supported video/media selections you explicitly choose.</td>
-+                <td>Media import flows or supported vault/file selections.</td>
-+              </tr>
-+              <tr>
-+                <td><code>READ_MEDIA_AUDIO</code></td>
-+                <td>Access supported audio/media selections you explicitly choose.</td>
-+                <td>Media import flows or supported vault/file selections.</td>
-+              </tr>
-+              <tr>
-+                <td><code>READ_MEDIA_VISUAL_USER_SELECTED</code></td>
-+                <td>Respect Android&#39;s selected-photo access model on newer versions.</td>
-+                <td>Limited media access when you grant selected items only.</td>
-+              </tr>
-+              <tr>
-+                <td><code>READ_EXTERNAL_STORAGE</code> and <code>WRITE_EXTERNAL_STORAGE</code></td>
-+                <td>Maintain compatibility for older Android versions.</td>
-+                <td>Legacy import and export support where required by the OS.</td>
-+              </tr>
-+              <tr>
-+                <td><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code></td>
-+                <td>Support sign-in, cloud backup, ads, billing, diagnostics, model downloads, and connectivity checks.</td>
-+                <td>Optional online features and service availability checks.</td>
-+              </tr>
-+              <tr>
-+                <td><code>POST_NOTIFICATIONS</code></td>
-+                <td>Show processing, backup, restore, export, and progress notifications.</td>
-+                <td>Long-running user-initiated tasks.</td>
-+              </tr>
-+              <tr>
-+                <td><code>USE_BIOMETRIC</code></td>
-+                <td>Allow biometric unlock where you enable it.</td>
-+                <td>Optional app lock or vault-related security flows.</td>
-+              </tr>
-+              <tr>
-+                <td><code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_DATA_SYNC</code></td>
-+                <td>Keep long-running user-requested tasks active and visible to the system.</td>
-+                <td>Backups, restores, and extended processing jobs.</td>
-+              </tr>
-+              <tr>
-+                <td><code>VIBRATE</code></td>
-+                <td>Provide haptic feedback in supported interactions.</td>
-+                <td>Scanning and UI feedback.</td>
-+              </tr>
-+            </tbody>
-+          </table>
-+        </div>
-+      </section>
-+
-+      <section class="section-card" id="sharing">
-+        <h2>7. When Information Is Shared and With Whom</h2>
-+        <p>We do not sell your personal data. We share or disclose information only in limited situations:</p>
-+        <ul>
-+          <li><strong>With Google services that you choose to use:</strong> such as Google Sign-In, Google Drive backup, Google Mobile Ads, Google Play Billing, or ML Kit-related services.</li>
-+          <li><strong>With Firebase Crashlytics:</strong> for crash, ANR, and stability diagnostics in public releases.</li>
-+          <li><strong>With Android or other apps at your direction:</strong> when you use share, open-with, export, print, email, or other user-initiated outbound actions.</li>
-+          <li><strong>For legal reasons:</strong> if disclosure is required by law, legal process, or to protect rights, security, users, or services.</li>
-+          <li><strong>In a business transition:</strong> if ownership of the App or its assets is transferred, subject to applicable law and appropriate notice where required.</li>
-+        </ul>
-+      </section>
-+
-+      <section class="section-card" id="google-features">
-+        <h2>8. Google Sign-In, Drive Backup, and ML Features</h2>
-+
-+        <h3>8.1 Google Sign-In</h3>
-+        <p>
-+          Google Sign-In is optional. If you sign in, the App may locally keep basic account information such as
-+          your email, display name, user ID, and profile picture URI in order to restore your session and enable
-+          backup-related features.
-+        </p>
-+
-+        <h3>8.2 Google Drive backup</h3>
-+        <p>
-+          If you enable backup or restore, the App uses Google Drive&#39;s <code>appDataFolder</code> area. This
-+          is a hidden, app-specific storage space in your Google account that is intended for application data and
-+          is not part of your regular visible Drive files area.
-+        </p>
-+        <ul>
-+          <li>Backups are created only when you trigger backup or restore actions.</li>
-+          <li>We do not receive your Google password.</li>
-+          <li>Your backup files are stored in Google infrastructure under Google&#39;s own policies and security controls.</li>
-+        </ul>
-+
-+        <h3>8.3 ML Kit and translation model downloads</h3>
-+        <p>
-+          The App may use Google ML Kit for OCR, language identification, translation, QR scanning, and related
-+          on-device features. According to Google&#39;s ML Kit documentation, input data is processed on-device,
-+          but ML Kit APIs may occasionally contact Google servers for model downloads, updates, compatibility
-+          information, and performance or utilization metrics.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="ads-billing">
-+        <h2>9. Ads, Billing, and Monetization</h2>
-+
-+        <h3>9.1 Ads</h3>
-+        <p>
-+          The free version of the App may display banner, native, or rewarded ads using Google Mobile Ads /
-+          AdMob. Depending on the SDK behavior, device settings, region, and Google policies, Google may process
-+          advertising-related data such as advertising ID, app set ID, device and account identifiers, ad request
-+          data, and ad interaction or measurement signals.
-+        </p>
-+
-+        <h3>9.2 Purchases and subscriptions</h3>
-+        <p>
-+          Premium subscriptions and one-time purchases are handled by Google Play Billing. We may receive limited
-+          billing results and entitlement status so that the App can unlock or restore purchased features.
-+        </p>
-+        <ul>
-+          <li>We do not receive or store your full payment card number.</li>
-+          <li>Google Play manages payment credentials, receipts, taxes, and renewal mechanics under Google&#39;s own policies.</li>
-+        </ul>
-+      </section>
-+
-+      <section class="section-card" id="crash-reporting">
-+        <h2>10. Crash Reporting and Diagnostics</h2>
-+        <p>
-+          Public releases of the App may use <strong>Firebase Crashlytics</strong> to help identify crashes,
-+          ANRs, and major stability issues. According to Firebase documentation, crash reports may include data
-+          such as installation or session identifiers, timestamps, app version, device model, operating system
-+          version, stack traces, and related diagnostic context.
-+        </p>
-+        <p>
-+          We use this information to investigate reliability problems, improve app quality, and reduce failures.
-+          Crash reporting is intended for technical diagnostics. It is not designed as a document-hosting or
-+          document-review service.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="retention">
-+        <h2>11. Data Retention and Deletion</h2>
-+        <ul>
-+          <li><strong>Local files and vault items:</strong> remain on your device until you delete them, clear app data, or uninstall the App.</li>
-+          <li><strong>Local sign-in session data:</strong> remains until you sign out, clear app data, or uninstall the App.</li>
-+          <li><strong>Google Drive backups:</strong> remain until you delete them, replace them, revoke the App&#39;s access, or otherwise remove them from your Google account environment.</li>
-+          <li><strong>Crash, ad, and billing-related data:</strong> may be retained by Google, Firebase, AdMob, or Google Play according to their own retention practices.</li>
-+          <li><strong>Email communications:</strong> may remain in your email provider&#39;s systems and our email systems until deleted or archived.</li>
-+        </ul>
-+      </section>
-+
-+      <section class="section-card" id="choices">
-+        <h2>12. Your Choices and Privacy Controls</h2>
-+        <ul>
-+          <li>Use most core document features without signing in to a Google account.</li>
-+          <li>Grant, deny, or revoke permissions through Android system settings.</li>
-+          <li>Sign out of your Google account inside the App when you no longer want account-based features.</li>
-+          <li>Delete documents, scans, exports, backups, or vault items from within the App or your chosen storage location.</li>
-+          <li>Manage Google account permissions, backup access, and connected apps in your Google account settings.</li>
-+          <li>Use Android and Google privacy controls to reset or delete your advertising ID where your device supports it.</li>
-+          <li>Uninstall the App or clear its local storage if you want to remove data stored on the device.</li>
-+        </ul>
-+        <div class="note">
-+          There is no standalone Lihenium cloud account managed by us. If you use Google Sign-In, account
-+          identity remains managed by Google, and some privacy actions may need to be completed through your
-+          Google account controls in addition to in-app actions.
-+        </div>
-+      </section>
-+
-+      <section class="section-card" id="security">
-+        <h2>13. Security</h2>
-+        <p>
-+          We use reasonable technical and organizational measures to protect information handled by the App. This
-+          includes local storage protections, Android security features, vault-related protections, and platform
-+          security controls made available through the Android ecosystem and the third-party services we rely on.
-+        </p>
-+        <ul>
-+          <li>Vault and app-lock features are designed to add local protection for private content.</li>
-+          <li>Biometric and lock features are optional and depend on your device capabilities and settings.</li>
-+          <li>No method of storage, transmission, or security implementation is 100% secure.</li>
-+        </ul>
-+        <p>
-+          You are also responsible for keeping your device secure and for safeguarding your PINs, passphrases,
-+          recovery details, backups, and account access.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="children">
-+        <h2>14. Children&#39;s Privacy</h2>
-+        <p>
-+          The App is intended for a general audience and is not directed to children under 13. We do not
-+          knowingly collect personal information from children in a way that is intended to target or profile
-+          them. If you believe that a child has provided personal information through the App in a manner that
-+          requires parental action or deletion, please contact us.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="international">
-+        <h2>15. International Processing</h2>
-+        <p>
-+          The App may be available to users in multiple countries. If you use third-party services such as
-+          Google, Firebase, AdMob, or Google Play, data handled by those providers may be processed on systems
-+          located in countries other than your own, subject to their legal terms, safeguards, and privacy
-+          practices.
-+        </p>
-+      </section>
-+
-+      <section class="section-card" id="changes">
-+        <h2>16. Changes to This Privacy Policy</h2>
-+        <p>
-+          We may update this Privacy Policy from time to time to reflect changes in the App, legal requirements,
-+          platform rules, or third-party service usage. When we make material updates, we will revise the
-+          &quot;Last Updated&quot; date on this page and publish the current version at the active policy URL.
-+        </p>
-+      </section>
-+
-+      <section class="section-card">
-+        <h2>Important Third-Party References</h2>
-+        <p class="subtle">
-+          The App depends on third-party platforms and SDKs. You should review their policies if you use those
-+          features.
-+        </p>
-+        <ul class="link-list">
-+          <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
-+          <li><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy and Security</a></li>
-+          <li><a href="https://support.google.com/googleplay/android-developer/answer/9888076" rel="noopener noreferrer">Google Play User Data Policy</a></li>
-+          <li><a href="https://developers.google.com/workspace/drive/api/guides/appdata" rel="noopener noreferrer">Google Drive appDataFolder Guide</a></li>
-+          <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads SDK Data Disclosure Guidance</a></li>
-+          <li><a href="https://developers.google.com/ml-kit/terms" rel="noopener noreferrer">ML Kit Terms and Privacy</a></li>
-+        </ul>
-+      </section>
-+    </div>
-+
-+    <section class="contact-card" id="contact">
-+      <h2>17. Contact</h2>
-+      <p>
-+        For privacy questions, requests, or concerns regarding Lihenium: Scan PDF &amp; Vault, contact:
-+      </p>
-+      <p>
-+        <strong>Lihenium Studio</strong><br />
-+        Email: <a href="mailto:lihenium.app@gmail.com">lihenium.app@gmail.com</a>
-+      </p>
-+      <p class="subtle">
-+        Please include enough detail for us to understand your request. If your question concerns cloud backup,
-+        Google account permissions, billing, or ad preferences, you may also need to review or use the controls
-+        offered by Google, Firebase, AdMob, or Google Play.
-+      </p>
-+    </section>
-+
-+    <p class="footer">
-+      Privacy Policy for <strong>Lihenium: Scan PDF &amp; Vault</strong> |
-+      Effective March 14, 2026 | Last updated March 14, 2026
-+    </p>
-+  </main>
-+</body>
-+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for Lihenium: Scan PDF & Vault by Lihenium Studio." />
+  <title>Privacy Policy | Lihenium: Scan PDF &amp; Vault</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #05070b;
+      --bg-2: #0b0f17;
+      --panel: rgba(16, 21, 31, 0.92);
+      --panel-2: rgba(12, 17, 26, 0.96);
+      --text: #eef3fb;
+      --muted: #a3afc2;
+      --line: rgba(255, 255, 255, 0.08);
+      --line-strong: rgba(255, 255, 255, 0.14);
+      --brand: #6ea8ff;
+      --brand-soft: rgba(110, 168, 255, 0.12);
+      --accent: #75e0c0;
+      --accent-soft: rgba(117, 224, 192, 0.12);
+      --gold: #f2c46d;
+      --gold-soft: rgba(242, 196, 109, 0.13);
+      --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --radius-sm: 12px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(110, 168, 255, 0.12), transparent 28%),
+        radial-gradient(circle at top right, rgba(242, 196, 109, 0.10), transparent 24%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      padding: 0.18rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.05);
+      white-space: nowrap;
+    }
+
+    .page {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 18px 72px;
+    }
+
+    .hero,
+    .card,
+    .section,
+    .toc {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      padding: 34px 30px;
+      background:
+        linear-gradient(135deg, rgba(110, 168, 255, 0.11), transparent 42%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent),
+        var(--panel-2);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 12% 16%, rgba(242, 196, 109, 0.12), transparent 22%),
+        radial-gradient(circle at 88% 12%, rgba(117, 224, 192, 0.10), transparent 18%);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--line-strong);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 0.7rem;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      max-width: 12ch;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 2.2vw, 1.9rem);
+    }
+
+    h3 {
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      color: var(--text);
+    }
+
+    .lead {
+      max-width: 76ch;
+      font-size: 1.03rem;
+      color: var(--muted);
+      margin-top: 1rem;
+    }
+
+    .meta,
+    .cards,
+    .toc-grid,
+    .section-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .meta {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 24px;
+    }
+
+    .meta-box,
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .meta-box {
+      padding: 14px 16px;
+    }
+
+    .meta-label {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .meta-value {
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+
+    .cards {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 20px 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .toc {
+      margin-top: 20px;
+      border-radius: var(--radius-lg);
+      padding: 22px;
+    }
+
+    .toc-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 12px;
+    }
+
+    .toc a {
+      display: block;
+      padding: 0.85rem 0.95rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .section-grid {
+      margin-top: 20px;
+    }
+
+    .section {
+      border-radius: var(--radius-lg);
+      padding: 24px 22px;
+    }
+
+    .section p:last-child,
+    .section ul:last-child,
+    .section .table-wrap:last-child {
+      margin-bottom: 0;
+    }
+
+    .subtle {
+      color: var(--muted);
+    }
+
+    .note {
+      margin-top: 1rem;
+      padding: 14px 16px;
+      border-left: 4px solid var(--brand);
+      border-radius: 14px;
+      background: var(--brand-soft);
+    }
+
+    .note.warn {
+      border-left-color: var(--gold);
+      background: var(--gold-soft);
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem;
+      padding-left: 1.15rem;
+    }
+
+    li + li {
+      margin-top: 0.42rem;
+    }
+
+    .table-wrap {
+      margin-top: 12px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+    }
+
+    table {
+      width: 100%;
+      min-width: 740px;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .meta,
+      .cards,
+      .toc-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 16px 14px 50px;
+      }
+
+      .hero,
+      .toc,
+      .section,
+      .card {
+        padding: 20px 18px;
+      }
+
+      .meta,
+      .cards,
+      .toc-grid {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        min-width: 620px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="badge">Privacy Policy</div>
+      <h1>Lihenium: Scan PDF &amp; Vault</h1>
+      <p class="lead">
+        This Privacy Policy explains how <strong>Lihenium Studio</strong> handles information when you use
+        <strong>Lihenium: Scan PDF &amp; Vault</strong> (the “App”). The App is designed primarily as a local-first
+        document utility, which means most scanning, editing, OCR, vault protection, and file management happen on
+        your device unless you choose to use optional online services.
+      </p>
+
+      <div class="meta">
+        <div class="meta-box">
+          <span class="meta-label">Publisher</span>
+          <div class="meta-value">Lihenium Studio</div>
+        </div>
+        <div class="meta-box">
+          <span class="meta-label">Contact</span>
+          <div class="meta-value"><a href="mailto:lihenium.app@gmail.com">lihenium.app@gmail.com</a></div>
+        </div>
+        <div class="meta-box">
+          <span class="meta-label">Effective Date</span>
+          <div class="meta-value">March 14, 2026</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="cards" aria-label="quick summary">
+      <article class="card">
+        <h3>Local-first by default</h3>
+        <p>Your documents, scans, OCR results, edits, and vault items generally stay on your device unless you export, share, or back them up.</p>
+      </article>
+      <article class="card">
+        <h3>Optional Google features</h3>
+        <p>Google Sign-In and Google Drive backup are optional. Most core document features can be used without signing in.</p>
+      </article>
+      <article class="card">
+        <h3>Third-party services</h3>
+        <p>If enabled in your app build, services such as Google Mobile Ads, Google Play Billing, Firebase Crashlytics, and ML Kit may process limited technical data.</p>
+      </article>
+      <article class="card">
+        <h3>Your control</h3>
+        <p>You can manage permissions, sign out, remove local files, delete backups, and uninstall the App at any time.</p>
+      </article>
+    </section>
+
+    <nav class="toc" aria-label="table of contents">
+      <h2>Contents</h2>
+      <div class="toc-grid">
+        <a href="#who-we-are">1. Who We Are</a>
+        <a href="#data-we-handle">2. Information We Handle</a>
+        <a href="#how-we-use">3. How We Use Information</a>
+        <a href="#local-processing">4. Local Processing and Storage</a>
+        <a href="#permissions">5. Permissions</a>
+        <a href="#third-parties">6. Google Services and Third Parties</a>
+        <a href="#sharing">7. Sharing of Information</a>
+        <a href="#retention">8. Retention and Deletion</a>
+        <a href="#choices">9. Your Choices</a>
+        <a href="#security">10. Security</a>
+        <a href="#children">11. Children’s Privacy</a>
+        <a href="#changes">12. Changes to This Policy</a>
+        <a href="#contact">13. Contact</a>
+      </div>
+    </nav>
+
+    <div class="section-grid">
+      <section class="section" id="who-we-are">
+        <h2>1. Who We Are</h2>
+        <p>
+          <strong>App:</strong> Lihenium: Scan PDF &amp; Vault<br />
+          <strong>Publisher:</strong> Lihenium Studio<br />
+          <strong>Country:</strong> India<br />
+          <strong>Contact:</strong> <a href="mailto:lihenium.app@gmail.com">lihenium.app@gmail.com</a>
+        </p>
+        <p class="subtle">
+          In this policy, “we,” “us,” and “our” refer to Lihenium Studio.
+        </p>
+      </section>
+
+      <section class="section" id="data-we-handle">
+        <h2>2. Information We Handle</h2>
+
+        <h3>2.1 Content you create or import</h3>
+        <ul>
+          <li>Scanned pages, imported images, PDFs, OCR text, edited files, exports, and file metadata.</li>
+          <li>Vault content and vault-related local settings used to protect your private files.</li>
+          <li>Files you intentionally open through the camera, Android file picker, share sheet, or supported import flows.</li>
+        </ul>
+
+        <h3>2.2 Optional account information</h3>
+        <p>
+          If you choose to sign in with Google, the App may access and locally store basic account details such as your
+          email address, display name, profile picture, and Google account identifier so that optional account-based
+          features can work properly.
+        </p>
+
+        <h3>2.3 App settings and technical state</h3>
+        <ul>
+          <li>Theme, language, file preferences, app lock settings, and related local configuration.</li>
+          <li>Backup state, restore state, processing status, and other technical data needed to run features you request.</li>
+        </ul>
+
+        <h3>2.4 Diagnostics, purchases, and advertising data</h3>
+        <p>
+          If these services are enabled in your version of the App, we may receive limited technical or status data from
+          third-party providers such as Google Play Billing, Google Mobile Ads, and Firebase Crashlytics.
+        </p>
+      </section>
+
+      <section class="section" id="how-we-use">
+        <h2>3. How We Use Information</h2>
+        <ul>
+          <li>To provide scanning, OCR, PDF tools, document organization, secure vault, export, and related file features.</li>
+          <li>To save, restore, back up, and manage your files when you choose those actions.</li>
+          <li>To support optional sign-in and Google Drive backup features.</li>
+          <li>To verify premium purchases or subscription entitlements handled through Google Play.</li>
+          <li>To improve reliability, investigate crashes, and respond to support requests.</li>
+          <li>To comply with legal obligations and protect users, the App, and third-party services from misuse.</li>
+        </ul>
+        <div class="note">
+          We do not operate our own document-processing server for the App’s core scanning and editing functions.
+          Most core processing is intended to happen locally on your device.
+        </div>
+      </section>
+
+      <section class="section" id="local-processing">
+        <h2>4. Local Processing and Storage</h2>
+        <p>
+          Lihenium is designed primarily as a local-first app. In normal use, your scans, PDFs, OCR output, vault files,
+          previews, and edits remain on your device or in storage locations that you choose.
+        </p>
+        <ul>
+          <li>Most document processing and file handling occur on-device.</li>
+          <li>Backups are only created when you actively choose to use backup or restore features.</li>
+          <li>Files may leave your device only when you explicitly export, share, print, email, or back them up.</li>
+        </ul>
+        <div class="note warn">
+          Please keep your device, vault passcode, PIN, and recovery details secure. If you lose access credentials,
+          some protected content may become inaccessible.
+        </div>
+      </section>
+
+      <section class="section" id="permissions">
+        <h2>5. Permissions</h2>
+        <p class="subtle">
+          The permissions requested may vary depending on Android version and the features you choose to use.
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Why it may be needed</th>
+                <th>Example use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>CAMERA</code></td>
+                <td>To capture document photos and scans.</td>
+                <td>Scanning paper documents.</td>
+              </tr>
+              <tr>
+                <td><code>FLASHLIGHT</code></td>
+                <td>To assist scanning in low light.</td>
+                <td>Using the torch while scanning.</td>
+              </tr>
+              <tr>
+                <td><code>READ_MEDIA_IMAGES</code></td>
+                <td>To import images you choose from your device.</td>
+                <td>Opening a gallery photo for PDF creation.</td>
+              </tr>
+              <tr>
+                <td><code>READ_MEDIA_VIDEO</code> / <code>READ_MEDIA_AUDIO</code></td>
+                <td>To access media you intentionally select where supported by the App.</td>
+                <td>Importing supported files into storage or vault flows.</td>
+              </tr>
+              <tr>
+                <td><code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code></td>
+                <td>Compatibility support for older Android versions.</td>
+                <td>Legacy import or export workflows.</td>
+              </tr>
+              <tr>
+                <td><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code></td>
+                <td>To support online features and check connectivity.</td>
+                <td>Sign-in, backup, billing, ads, diagnostics, or model download.</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>To show progress or completion alerts.</td>
+                <td>Backup, restore, export, or processing notifications.</td>
+              </tr>
+              <tr>
+                <td><code>USE_BIOMETRIC</code></td>
+                <td>To allow biometric protection where supported.</td>
+                <td>App lock or vault unlock.</td>
+              </tr>
+              <tr>
+                <td><code>FOREGROUND_SERVICE</code></td>
+                <td>To keep user-requested long-running tasks active.</td>
+                <td>Backup, restore, or extended processing.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="third-parties">
+        <h2>6. Google Services and Third Parties</h2>
+        <p>
+          Depending on the features enabled in your version of the App, some third-party services may be used.
+        </p>
+
+        <h3>6.1 Google Sign-In</h3>
+        <p>
+          Google Sign-In is optional. If you sign in, your basic Google account information may be used so the App can
+          maintain your session and support account-based features.
+        </p>
+
+        <h3>6.2 Google Drive backup</h3>
+        <p>
+          If you use backup or restore, the App may store backup data in your Google Drive <code>appDataFolder</code>,
+          which is intended to be an app-specific storage area within your Google account.
+        </p>
+
+        <h3>6.3 ML Kit features</h3>
+        <p>
+          The App may use Google ML Kit for features such as OCR, QR scanning, language identification, translation,
+          or document-related processing. These features are generally designed to run on-device, although some model
+          downloads or service interactions may occur depending on the feature.
+        </p>
+
+        <h3>6.4 Ads, billing, and diagnostics</h3>
+        <p>
+          If enabled, the free version of the App may display ads through Google Mobile Ads. Premium purchases may be
+          handled through Google Play Billing. Public releases may also use Firebase Crashlytics to help identify app
+          crashes, ANRs, and major stability issues.
+        </p>
+      </section>
+
+      <section class="section" id="sharing">
+        <h2>7. Sharing of Information</h2>
+        <p>We do not sell your personal information. Information may be shared only in limited situations such as:</p>
+        <ul>
+          <li>With service providers or platforms you choose to use, such as Google Sign-In, Google Drive backup, Google Play Billing, Google Mobile Ads, ML Kit, or Firebase Crashlytics.</li>
+          <li>With other apps or services when you intentionally export, share, print, email, or open a file outside the App.</li>
+          <li>When required by law, legal process, or legitimate safety and security needs.</li>
+          <li>As part of a business transfer, merger, acquisition, or asset sale, if ever applicable.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="retention">
+        <h2>8. Retention and Deletion</h2>
+        <ul>
+          <li><strong>Local files:</strong> remain on your device until you delete them, clear app data, or uninstall the App.</li>
+          <li><strong>Local settings and session data:</strong> remain until you sign out, clear app data, or uninstall the App.</li>
+          <li><strong>Google Drive backups:</strong> remain until you remove or replace them in your Google account environment.</li>
+          <li><strong>Third-party diagnostics, ad, or billing data:</strong> may be retained by the relevant provider according to that provider’s own policies.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="choices">
+        <h2>9. Your Choices</h2>
+        <ul>
+          <li>Use most core document features without signing in.</li>
+          <li>Grant, deny, or revoke permissions in Android system settings.</li>
+          <li>Sign out of your Google account inside the App if you no longer want account-based features.</li>
+          <li>Delete local files, exports, backups, and vault items when you choose.</li>
+          <li>Manage connected Google account permissions and privacy controls through your Google account settings.</li>
+          <li>Uninstall the App or clear its local storage to remove on-device app data.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="security">
+        <h2>10. Security</h2>
+        <p>
+          We use reasonable measures designed to help protect information handled by the App, including local storage
+          protections, vault-related controls, and platform security features made available by Android and supporting
+          services.
+        </p>
+        <ul>
+          <li>Vault and app-lock features are intended to add local protection for sensitive files.</li>
+          <li>Biometric features depend on your device and your settings.</li>
+          <li>No method of storage or transmission is completely secure.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="children">
+        <h2>11. Children’s Privacy</h2>
+        <p>
+          The App is intended for a general audience and is not directed to children under 13. We do not knowingly
+          collect personal information from children in a way intended to profile or target them.
+        </p>
+      </section>
+
+      <section class="section" id="changes">
+        <h2>12. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in the App, applicable law,
+          platform requirements, or third-party service usage. When we update the policy, we will revise the effective
+          date shown on this page.
+        </p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>13. Contact</h2>
+        <p>
+          For privacy questions or concerns regarding Lihenium: Scan PDF &amp; Vault, contact:
+        </p>
+        <p>
+          <strong>Lihenium Studio</strong><br />
+          Email: <a href="mailto:lihenium.app@gmail.com">lihenium.app@gmail.com</a>
+        </p>
+      </section>
+    </div>
+
+    <p class="footer">
+      Privacy Policy for <strong>Lihenium: Scan PDF &amp; Vault</strong> • Effective March 14, 2026
+    </p>
+  </main>
+</body>
+</html>
